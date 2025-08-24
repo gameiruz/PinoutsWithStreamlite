@@ -24,8 +24,9 @@ else:
             with cols[i % 3]:
                 st.caption(p.stem.replace("_", " "))
                 img = Image.open(p)
-                st.image(img, use_column_width=True)
+                st.image(img, use_container_width=True)
 
 with st.sidebar:
     st.subheader("Notas rápidas")
     st.write("Podes guardar apontamentos no README do repositório ou usar comentários nas imagens (nome do ficheiro bem descritivo ajuda).")
+
